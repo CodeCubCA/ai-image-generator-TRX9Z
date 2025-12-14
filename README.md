@@ -1,10 +1,10 @@
 ---
 title: AI Image Generator
 emoji: 🎨
-colorFrom: purple
-colorTo: blue
+colorFrom: blue
+colorTo: purple
 sdk: streamlit
-sdk_version: 1.40.0
+sdk_version: "1.28.0"
 app_file: app.py
 pinned: false
 ---
