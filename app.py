@@ -11,7 +11,7 @@ load_dotenv()
 
 # Configuration
 HUGGINGFACE_TOKEN = os.getenv("HUGGINGFACE_TOKEN")
-MODEL_NAME = "black-forest-labs/FLUX.1-schnell"
+MODEL_NAME = "stabilityai/stable-diffusion-xl-base-1.0"
 
 # Style presets
 STYLE_PRESETS = {
@@ -71,7 +71,7 @@ def main():
 
     # Header
     st.title("🎨 AI Image Generator")
-    st.markdown("Generate stunning images from text using AI powered by FLUX.1-schnell")
+    st.markdown("Generate stunning images from text using AI powered by Stable Diffusion XL")
 
     # Check if API token is configured
     if not HUGGINGFACE_TOKEN:
@@ -102,7 +102,7 @@ def main():
 
         st.header("ℹ️ About")
         st.write(f"**Model:** {MODEL_NAME}")
-        st.write("FLUX.1-schnell is a fast, high-quality image generation model by Black Forest Labs.")
+        st.write("Stable Diffusion XL is a high-quality image generation model by Stability AI.")
 
         st.markdown("---")
 
@@ -239,7 +239,7 @@ def main():
     # Footer
     st.markdown("---")
     st.markdown(
-        "<div style='text-align: center; color: gray;'>Built with ❤️ using Streamlit & HuggingFace FLUX.1-schnell</div>",
+        "<div style='text-align: center; color: gray;'>Built with ❤️ using Streamlit & HuggingFace Stable Diffusion XL</div>",
         unsafe_allow_html=True
     )
 
